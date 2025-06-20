@@ -1,6 +1,0 @@
-2025-06-20 14:11:20.576 +05:30 [INF] Saved 0 entities to in-memory store.
-2025-06-20 14:11:20.619 +05:30 [INF] Starting JSONPlaceholder Clone API
-2025-06-20 14:11:20.724 +05:30 [INF] Now listening on: http://localhost:5074
-2025-06-20 14:11:20.726 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2025-06-20 14:11:20.727 +05:30 [INF] Hosting environment: Development
-2025-06-20 14:11:20.728 +05:30 [INF] Content root path: D:\Telus\FYX\JsonPlaceholderClone

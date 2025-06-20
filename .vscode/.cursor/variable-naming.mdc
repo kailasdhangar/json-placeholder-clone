@@ -1,6 +1,0 @@
----
-description: 
-globs: 
-alwaysApply: true
----
-All variable names should be in pascal case and ends with number index.
