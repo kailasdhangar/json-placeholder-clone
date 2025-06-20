@@ -1,0 +1,6 @@
+@JsonPlaceholderClone_HostAddress = http://localhost:5074
+
+GET {{JsonPlaceholderClone_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

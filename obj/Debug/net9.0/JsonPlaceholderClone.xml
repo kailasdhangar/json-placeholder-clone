@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JsonPlaceholderClone</name>
+    </assembly>
+    <members>
+        <member name="M:JsonPlaceholderClone.Controllers.AlbumsController.GetAlbums">
+            <summary>
+            Get all albums
+            </summary>
+            <returns>List of all albums</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.AlbumsController.GetAlbum(System.Int32)">
+            <summary>
+            Get a specific album by ID
+            </summary>
+            <param name="id">Album ID</param>
+            <returns>Album details</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.AlbumsController.CreateAlbum(JsonPlaceholderClone.DTOs.CreateAlbumDto)">
+            <summary>
+            Create a new album
+            </summary>
+            <param name="createAlbumDto">Album data</param>
+            <returns>Created album</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.AlbumsController.UpdateAlbum(System.Int32,JsonPlaceholderClone.DTOs.UpdateAlbumDto)">
+            <summary>
+            Update an existing album
+            </summary>
+            <param name="id">Album ID</param>
+            <param name="updateAlbumDto">Updated album data</param>
+            <returns>Updated album</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.AlbumsController.DeleteAlbum(System.Int32)">
+            <summary>
+            Delete an album
+            </summary>
+            <param name="id">Album ID</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.AlbumsController.GetAlbumPhotos(System.Int32)">
+            <summary>
+            Get photos for a specific album
+            </summary>
+            <param name="id">Album ID</param>
+            <returns>List of album's photos</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.AlbumsController.GetAlbumWithPhotos(System.Int32)">
+            <summary>
+            Get an album with its photos
+            </summary>
+            <param name="id">Album ID</param>
+            <returns>Album with photos</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.CommentsController.GetComments">
+            <summary>
+            Get all comments
+            </summary>
+            <returns>List of all comments</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.CommentsController.GetComment(System.Int32)">
+            <summary>
+            Get a specific comment by ID
+            </summary>
+            <param name="id">Comment ID</param>
+            <returns>Comment details</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.CommentsController.CreateComment(JsonPlaceholderClone.DTOs.CreateCommentDto)">
+            <summary>
+            Create a new comment
+            </summary>
+            <param name="createCommentDto">Comment data</param>
+            <returns>Created comment</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.CommentsController.UpdateComment(System.Int32,JsonPlaceholderClone.DTOs.UpdateCommentDto)">
+            <summary>
+            Update an existing comment
+            </summary>
+            <param name="id">Comment ID</param>
+            <param name="updateCommentDto">Updated comment data</param>
+            <returns>Updated comment</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.CommentsController.DeleteComment(System.Int32)">
+            <summary>
+            Delete a comment
+            </summary>
+            <param name="id">Comment ID</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.CommentsController.GetCommentsByPostId(System.Int32)">
+            <summary>
+            Get comments by post ID
+            </summary>
+            <param name="postId">Post ID</param>
+            <returns>List of comments for the post</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PhotosController.GetPhotos">
+            <summary>
+            Get all photos
+            </summary>
+            <returns>List of all photos</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PhotosController.GetPhoto(System.Int32)">
+            <summary>
+            Get a specific photo by ID
+            </summary>
+            <param name="id">Photo ID</param>
+            <returns>Photo details</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PhotosController.CreatePhoto(JsonPlaceholderClone.DTOs.CreatePhotoDto)">
+            <summary>
+            Create a new photo
+            </summary>
+            <param name="createPhotoDto">Photo data</param>
+            <returns>Created photo</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PhotosController.UpdatePhoto(System.Int32,JsonPlaceholderClone.DTOs.UpdatePhotoDto)">
+            <summary>
+            Update an existing photo
+            </summary>
+            <param name="id">Photo ID</param>
+            <param name="updatePhotoDto">Updated photo data</param>
+            <returns>Updated photo</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PhotosController.DeletePhoto(System.Int32)">
+            <summary>
+            Delete a photo
+            </summary>
+            <param name="id">Photo ID</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PhotosController.GetPhotosByAlbumId(System.Int32)">
+            <summary>
+            Get photos by album ID
+            </summary>
+            <param name="albumId">Album ID</param>
+            <returns>List of photos for the album</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PostsController.GetPosts">
+            <summary>
+            Get all posts
+            </summary>
+            <returns>List of all posts</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PostsController.GetPost(System.Int32)">
+            <summary>
+            Get a specific post by ID
+            </summary>
+            <param name="id">Post ID</param>
+            <returns>Post details</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PostsController.CreatePost(JsonPlaceholderClone.DTOs.CreatePostDto)">
+            <summary>
+            Create a new post
+            </summary>
+            <param name="createPostDto">Post data</param>
+            <returns>Created post</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PostsController.UpdatePost(System.Int32,JsonPlaceholderClone.DTOs.UpdatePostDto)">
+            <summary>
+            Update an existing post
+            </summary>
+            <param name="id">Post ID</param>
+            <param name="updatePostDto">Updated post data</param>
+            <returns>Updated post</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PostsController.DeletePost(System.Int32)">
+            <summary>
+            Delete a post
+            </summary>
+            <param name="id">Post ID</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PostsController.GetPostComments(System.Int32)">
+            <summary>
+            Get comments for a specific post
+            </summary>
+            <param name="id">Post ID</param>
+            <returns>List of post's comments</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.PostsController.GetPostWithComments(System.Int32)">
+            <summary>
+            Get a post with its comments
+            </summary>
+            <param name="id">Post ID</param>
+            <returns>Post with comments</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TestController.Get">
+            <summary>
+            Simple GET test endpoint
+            </summary>
+            <returns>Test response</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TestController.GetById(System.Int32)">
+            <summary>
+            Test endpoint with parameter
+            </summary>
+            <param name="id">Test ID</param>
+            <returns>Test response with ID</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TestController.Post(JsonPlaceholderClone.Controllers.TestDataDto)">
+            <summary>
+            Test POST endpoint
+            </summary>
+            <param name="testData">Test data to process</param>
+            <returns>Processed test data</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TestController.Put(System.Int32,JsonPlaceholderClone.Controllers.TestDataDto)">
+            <summary>
+            Test PUT endpoint
+            </summary>
+            <param name="id">Test ID</param>
+            <param name="testData">Updated test data</param>
+            <returns>Updated test data</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TestController.Delete(System.Int32)">
+            <summary>
+            Test DELETE endpoint
+            </summary>
+            <param name="id">Test ID to delete</param>
+            <returns>Deletion result</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TestController.TestException">
+            <summary>
+            Test endpoint that throws an exception
+            </summary>
+            <returns>This will throw an exception</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TestController.TestQueryParameters(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Test endpoint with query parameters
+            </summary>
+            <param name="name">Name parameter</param>
+            <param name="age">Age parameter</param>
+            <param name="active">Active status</param>
+            <returns>Test response with query parameters</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TestController.Health">
+            <summary>
+            Health check endpoint
+            </summary>
+            <returns>Health status</returns>
+        </member>
+        <member name="T:JsonPlaceholderClone.Controllers.TestDataDto">
+            <summary>
+            Test data DTO for POST and PUT operations
+            </summary>
+        </member>
+        <member name="P:JsonPlaceholderClone.Controllers.TestDataDto.Name">
+            <summary>
+            Name of the test data
+            </summary>
+        </member>
+        <member name="P:JsonPlaceholderClone.Controllers.TestDataDto.Description">
+            <summary>
+            Description of the test data
+            </summary>
+        </member>
+        <member name="P:JsonPlaceholderClone.Controllers.TestDataDto.Value">
+            <summary>
+            Value associated with the test data
+            </summary>
+        </member>
+        <member name="P:JsonPlaceholderClone.Controllers.TestDataDto.IsActive">
+            <summary>
+            Whether the test data is active
+            </summary>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TodosController.GetTodos">
+            <summary>
+            Get all todos
+            </summary>
+            <returns>List of all todos</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TodosController.GetTodo(System.Int32)">
+            <summary>
+            Get a specific todo by ID
+            </summary>
+            <param name="id">Todo ID</param>
+            <returns>Todo details</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TodosController.CreateTodo(JsonPlaceholderClone.DTOs.CreateTodoDto)">
+            <summary>
+            Create a new todo
+            </summary>
+            <param name="createTodoDto">Todo data</param>
+            <returns>Created todo</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TodosController.UpdateTodo(System.Int32,JsonPlaceholderClone.DTOs.UpdateTodoDto)">
+            <summary>
+            Update an existing todo
+            </summary>
+            <param name="id">Todo ID</param>
+            <param name="updateTodoDto">Updated todo data</param>
+            <returns>Updated todo</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TodosController.DeleteTodo(System.Int32)">
+            <summary>
+            Delete a todo
+            </summary>
+            <param name="id">Todo ID</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TodosController.GetTodosByUserId(System.Int32)">
+            <summary>
+            Get todos by user ID
+            </summary>
+            <param name="userId">User ID</param>
+            <returns>List of todos for the user</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TodosController.GetCompletedTodos">
+            <summary>
+            Get completed todos
+            </summary>
+            <returns>List of completed todos</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.TodosController.GetPendingTodos">
+            <summary>
+            Get pending todos
+            </summary>
+            <returns>List of pending todos</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.UsersController.GetUsers">
+            <summary>
+            Get all users
+            </summary>
+            <returns>List of all users</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.UsersController.GetUser(System.Int32)">
+            <summary>
+            Get a specific user by ID
+            </summary>
+            <param name="id">User ID</param>
+            <returns>User details</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.UsersController.CreateUser(JsonPlaceholderClone.DTOs.CreateUserDto)">
+            <summary>
+            Create a new user
+            </summary>
+            <param name="createUserDto">User data</param>
+            <returns>Created user</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.UsersController.UpdateUser(System.Int32,JsonPlaceholderClone.DTOs.UpdateUserDto)">
+            <summary>
+            Update an existing user
+            </summary>
+            <param name="id">User ID</param>
+            <param name="updateUserDto">Updated user data</param>
+            <returns>Updated user</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            Delete a user
+            </summary>
+            <param name="id">User ID</param>
+            <returns>No content</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.UsersController.GetUserPosts(System.Int32)">
+            <summary>
+            Get posts for a specific user
+            </summary>
+            <param name="id">User ID</param>
+            <returns>List of user's posts</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.UsersController.GetUserAlbums(System.Int32)">
+            <summary>
+            Get albums for a specific user
+            </summary>
+            <param name="id">User ID</param>
+            <returns>List of user's albums</returns>
+        </member>
+        <member name="M:JsonPlaceholderClone.Controllers.UsersController.GetUserTodos(System.Int32)">
+            <summary>
+            Get todos for a specific user
+            </summary>
+            <param name="id">User ID</param>
+            <returns>List of user's todos</returns>
+        </member>
+    </members>
+</doc>

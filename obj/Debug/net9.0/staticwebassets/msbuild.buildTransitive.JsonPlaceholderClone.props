@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\JsonPlaceholderClone.props" />
+</Project>
